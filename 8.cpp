@@ -81,5 +81,6 @@ int main() {
     node* root = parse_node();
     cout << "Part 1 " << sum_metadata(root) << endl;
     cout << "Part 2 " << value(root) << endl;
+    delete root;
     return 0;
 }
