@@ -250,12 +250,9 @@ int main() {
         }
     }
     int beg = 1, end = 201;
-    
     while (end - beg > 1) {
         int mid = (end + beg) / 2;
         solve(b, mid);
-
-        auto it = creatures.begin();
         if (total_creatures['E'] == number_of_elfs) {
             end = mid;
         } else {
